@@ -30,7 +30,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Expose the port (make sure it matches your Spring Boot app port, usually 8080 or 9090)
-EXPOSE 9090
+EXPOSE 8081
 
 # Set environment variable for MySQL (optional; Render can override via dashboard)
 ENV SPRING_PROFILES_ACTIVE=prod
