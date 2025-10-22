@@ -30,7 +30,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Expose the port used in your Spring Boot app (adjust if yours is 9090)
-EXPOSE 9090
+EXPOSE 8081
 
 # Optional: set active Spring profile (can also be overridden in Render dashboard)
 ENV SPRING_PROFILES_ACTIVE=prod
