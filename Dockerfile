@@ -33,7 +33,7 @@ WORKDIR /app
 COPY --from=builder /app/build/libs/*.jar app.jar
 
 # Expose the port (Render will override this with its own PORT)
-EXPOSE 8080
+EXPOSE 8081
 
 # Set the entrypoint for running the app
 ENTRYPOINT ["java", "-jar", "app.jar"]
